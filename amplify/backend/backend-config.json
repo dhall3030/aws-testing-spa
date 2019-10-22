@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"awstestingspa4dd7a103": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

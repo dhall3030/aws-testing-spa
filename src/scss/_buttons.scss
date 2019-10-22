@@ -1,0 +1,36 @@
+
+
+.project-base-btn {
+  width: auto;
+  padding: 17px 18px;
+  display: inline-block;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all .4s;
+  position: relative;
+  vertical-align: middle;
+  border: 0;
+}
+
+.project-green-btn {
+  width: 100%;
+  background-color: $project-green;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 20px;
+  color: $white;
+  border-radius: 5px;
+
+  &:hover,
+  &:active {
+    background-color: lighten( $project-green, 10% );
+    color: $white;
+  }
+
+  @media (min-width: 1450px) {
+    width: auto;
+    &.full-width {
+      width: 100%;
+    }
+  }
+}

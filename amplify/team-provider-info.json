@@ -1,0 +1,19 @@
+{
+    "testspaenv": {
+        "awscloudformation": {
+            "AuthRoleName": "aws-testing-spa-testspaenv-20191017160757-authRole",
+            "UnauthRoleArn": "arn:aws:iam::778114588378:role/aws-testing-spa-testspaenv-20191017160757-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::778114588378:role/aws-testing-spa-testspaenv-20191017160757-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "aws-testing-spa-testspaenv-20191017160757-deployment",
+            "UnauthRoleName": "aws-testing-spa-testspaenv-20191017160757-unauthRole",
+            "StackName": "aws-testing-spa-testspaenv-20191017160757",
+            "StackId": "arn:aws:cloudformation:us-east-2:778114588378:stack/aws-testing-spa-testspaenv-20191017160757/d02a2490-f119-11e9-9390-06fb840c1544"
+        },
+        "categories": {
+            "auth": {
+                "awstestingspa4dd7a103": {}
+            }
+        }
+    }
+}

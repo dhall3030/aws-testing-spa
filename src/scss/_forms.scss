@@ -1,0 +1,36 @@
+.project-error {
+  border: 1px solid #f5c6cb !important;
+  background-color: #f8d7da;
+  color: #721c24 !important;
+  border-radius: .25rem;
+  padding: .75rem 1.25rem;
+}
+
+
+input {
+  &[type="text"],
+  &[type="email"],
+  &[type="tel"],
+  &[type="password"] {
+    width: 100%;
+    border-radius: 0;
+    font-family: $main-font;
+    font-style: italic;
+    font-size: 16px;
+    padding: 18px;
+    background: $white;
+    outline: 0;
+    transition: border .5s, background .5s;
+    border: 1px solid $light-grey;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    &:hover, &:focus, &:active {
+      background: $white;
+    }
+
+    &::placeholder {
+      color: $light-grey;
+    }
+  }
+}
