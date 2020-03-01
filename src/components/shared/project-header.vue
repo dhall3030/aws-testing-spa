@@ -21,9 +21,9 @@
           active-class="active"
           >{{link.name}}
         </router-link>
-        <router-link v-if="!auth"  active-class="active" to="/signin" title="Sign In Page">Sign In</router-link>
-        <router-link v-if="!auth"  active-class="active" to="/signup" title="Sign Up Page">Sign Up</router-link>
-         <router-link v-if="!auth"  active-class="active" to="/confirm" title="Confirm account">Confirm</router-link>
+        <router-link v-if="!auth"  active-class="active" to="/auth/signin" title="Sign In Page">Sign In</router-link>
+        <router-link v-if="!auth"  active-class="active" to="/auth/signup" title="Sign Up Page">Sign Up</router-link>
+         <router-link v-if="!auth"  active-class="active" to="/auth/confirm" title="Confirm account">Confirm</router-link>
         <router-link v-if="auth"  active-class="active" to="/dashboard" title="Go to dashboard">Dashboard</router-link>
       </div>
     </div>

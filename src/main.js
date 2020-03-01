@@ -32,7 +32,9 @@ console.log(awsExports)
 
 Amplify.configure(awsExports)
 
-// axios.defaults.baseURL = '';
+axios.defaults.baseURL = 'https://gjdb9wld4c.execute-api.us-east-2.amazonaws.com/dev';
+
+axios.defaults.headers.common['Authorization'] = localStorage.getItem('CognitoIdentityServiceProvider.6khlh2h130vf1nta5t81uj37r5.5c1142db-b3c5-4c82-a663-88ce3123fa1f.idToken');
 
 Vue.use(VueAxios, axios)
 
