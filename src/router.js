@@ -6,6 +6,7 @@ import SignIn from './components/auth/SignIn.vue';
 import SignUp from './components/auth/SignUp.vue';
 import Confirm from './components/auth/Confirm.vue';
 import Dashboard from './components/Dashboard.vue';
+import Books from './components/books/Books.vue';
 
 import store from './store/store'
 
@@ -19,6 +20,11 @@ const router = new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/books',
+      name: 'books',
+      component: Books
     },
     {
       path: '/auth',
@@ -44,18 +50,6 @@ const router = new Router({
       ]
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: Dashboard,
-       beforeEnter (to, from, next) {
-          if(store.state.auth.authorized){
-            next()
-          }else{
-            next('/signin')
-          }
-      }
-    },
-    {
       path: '/about',
       name: 'about',
       // route level code-splitting
@@ -73,6 +67,18 @@ const router = new Router({
     },
     { path: '*',
       redirect: '/'
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: Dashboard,
+       beforeEnter (to, from, next) {
+          if(store.state.auth.authorized){
+            next()
+          }else{
+            next('/signin')
+          }
+      }
     }
   ]
 })

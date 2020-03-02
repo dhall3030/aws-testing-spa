@@ -51,6 +51,11 @@ export default {
       this.$store.dispatch('auth/login', {email: this.email, password: this.password})
       //this.$store.dispatch('changeCount',this.count)
     }
+  },
+  computed: {
+    auth(){
+      return this.$store.getters['auth/isAuthenticated']
+    }
   }
 }
 </script>
